@@ -1,0 +1,44 @@
+The algorithm, represented using pseudo-code in Figure 4, describes a method to clculate the additiveor multiplicative persistence of a two-digit integer.
+The examples blow illustrate how additive and multiplicative persistance are calculated.
+
+Example: calculating the additive persistance of 87:
+8+7 = 15
+1+5 = 6
+After 2 steps the method results in a one digit answer so the additive persistence of 87 is 2.
+
+Example: calculating the multiplicative persistence of 39
+3*9 = 27
+2*7 = 14
+1*4 = 3
+After 3 steps the method results in a one digit answer so the multiplicative persistence of 39 is 3.
+
+
+
+FIGURE 4
+[FIGURE 4 START]
+OUTPUT "Enter integer (0-99): "
+INPUT Value
+OUTPUT "Calculate additive or multiplicative persistence (a or m)? "
+INPUT Operation
+Count <- 0
+WHILE Value > 9
+    IF Operaton = "a" THEN
+        Value <- (Value DIV 10) + (Value MOD 10)
+    ELSE
+        Value <- (Value DIV 10) * (Value MOD 10)
+    ENDIF
+    Count <- Count + 1
+ENDWHILE
+OUTPUT "The persistence is: "
+OUTPUT Count
+[FIGURE 4 END]
+
+
+
+The MOD operator calculates the remainder resulting from an integer division, for example, 10 MOD 3 = 1
+The DIV operator calculates integer division, for example, 10 DIV 3 = 3
+
+What you need to do:
+1. Write a program for the algorithm in Figure 4
+2. Test the program by showing the result of entering 47, followed by m when prompted by the program.
+3. Test the program by showing the result of 77, followed by a when prompted by the program.
