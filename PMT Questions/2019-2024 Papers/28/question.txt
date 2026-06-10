@@ -1,0 +1,13 @@
+Write a program that asks the user to enter a string. It should then change the order of the vowels in the string and display the result.
+If there are n vowels in the string, the 1st vowel in the string should swap with the nth vowel in the string, the 2nd vowel in the string should swap with the (n-1)th vowel in the string, and so on.
+The letters a, e, i, o, and u are the only vowels.
+
+EXAMPLES:
+    - If the user enters the string "horse" then the program should display the string "herso".
+    - If the user enters the string "goose" then the program should display the string "geoso".
+    - If the user enters the string "pinkfairyarmadillo" then the program should display the string "ponkfiaryarmidalli".
+    - If the user enters the string "nakedmolerat" then the program should display the string "nakedmolerat".
+    - If the user enters the string "lynx" then the program should display the string "lynx".
+    - If the user enters the string "pig" then the program should display the string "pig".
+
+You may assume the string that the user enters will only contain lowercase letters.
