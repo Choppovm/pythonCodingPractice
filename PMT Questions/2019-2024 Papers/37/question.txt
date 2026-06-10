@@ -1,0 +1,8 @@
+Write a program that gets the user to enter a string. It should keep getting the user to enter a string until they enter a valid string.
+Each time they enter a string an appropriate message should be displayed telling them whether the string they entered is valid or not.
+
+For a string to be valid:
+    - It must be between 5 and 7 characters in length (inclusive)
+    - It must consist of only uppercase letters
+    - It must contain only unique characters (ie no character appears in the string more than once)
+    - The sum of the ASCII codes of the characters in the string must be between 420 and 600 (inclusive)
